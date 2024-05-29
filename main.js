@@ -8,6 +8,12 @@ async function fetchAndDisplayImages() {
       let img = document.createElement("img");
       img.src = code.image;
       container.appendChild(img);
+      let title = document.createElement("p");
+      title.innerText = code.title;
+      container.appendChild(title);
+      let price= document.createElement("p")
+      price.innerText= code.price;
+      container.appendChild(price);
     }
   }
   
